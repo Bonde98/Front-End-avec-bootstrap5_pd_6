@@ -12,8 +12,7 @@
     <title>Ajouter un Article Page:4</title>
 </head>
 <body>
-  
-        <section class="home-4 ">
+        <section class="home-4">
             <nav class=" navbar navbar-expand-lg navbar-dark position-fixed w-100">
               <div class="container-fluid">
                 <a class="navbar-brand text-uppercase mx-4 py-3 fw-bolder" href="#">Social Médias</a>
@@ -37,85 +36,95 @@
             </nav>
           </section>        
 
-        <section class="ajouter-article bg-dark container-fluid ">
-          <div class="row ">
-            <div class="col-7 mt-5">
-              <label for="uname" class="form-label mt-5">Titre de L'article</label>
-              <input type="text" class="form-control" id="uname">
+          <div class="col-md-4 py-3  container-fluid">
+            <label for="validationCustom02" class="form-label">Titre de l'article</label>
+            <input type="text" class="form-control" id="validationCustom02" required>
+            <div class="valid-feedback">
+              Looks good!
             </div>
-            <div class="col-5"></div>
           </div>
-          <div class="row container-fluid">
-            <div class="col-6">
-              <label for="exampleFormControlTextarea1" class="form-label">Description</label>
-              <textarea class="form-control" id="exampleFormControlTextarea1" ></textarea>
-            </div>
-            <div class="col-6 bg-success mt-3">
-              <figure class="figure">
-                <img src="...." class="figure-img img-fluid rounded" alt="...">
-                <figcaption class="figure-caption text-end text-dark">A la place de l'image</figcaption>
-              </figure>
-            </div>
-            <div class="row">
-              <div class="col-12">
-                <label for="exampleFormControlTextarea1" class="form-label">Les Détails de l'article</label>
-              <textarea class="form-control" id="exampleFormControlTextarea1" ></textarea>
-              </div>
-            <div class="row">
-              <div class="col-4">
-                <label for="input" class="form-label">Auteur</label>
-                <input type="text" class="form-control" id="input">
-              </div>
-              <div class="col-md-4">
-                <label for="input" class="form-label">Date de création</label>
-                <input type="text" class="form-control" id="input">
-              </div>
-              <div class="col-md-4">
-                <label for="input" class="form-label">Date de dérniére mise à jour</label>
-                <input type="text" class="form-control" id="input">
-              </div>
-            </div>
+          <div class="col-md-8 mb-3 container-fluid">
+            <label for="exampleFormControlTextarea1" class="form-label">Description de l'article</label>
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="12"></textarea>
+          </div>
+        
+            <form class="row g-3 needs-validation container-fluid" novalidate>
+                <div class="mb-3">
+                    <label for="exampleFormControlTextarea1" class="form-label">Les Détails de l'article</label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="25"></textarea>
+                  
+                    <figure class="figure py-3">
+                      <img src="assiets/images/businessman.jpg" class="figure-img img-fluid rounded" alt="..." >
+                       
+                      <figcaption class="figure-caption text-light text-end">l'image de l'auteur.</figcaption>
+                    </figure>
+                  
+                  </div>
+                
               
-            </div>
-          </div>
-          <form class="row g-3">
-            <div class="col-12">
-              <div class="form-check">
-                <input class="form-check-input" type="checkbox" id="gridCheck">
-                <label class="form-check-label" for="gridCheck">
-                  Accepter les termes et conditions
-                </label>
-              </div>
-            </div>
-            <div>
-              <button type="submit" class="btn btn-primary">Soumettre le formulaire</button>
-            </div>
-          </form>
-        </section>
-       
-          <section class="pagination">
-            <div class="row container py-3">
-              <div class="col-auto">
-                <nav aria-label="Page navigation example">
-                  <ul class="pagination ">
-                    <li class="page-item">
-                      <a class="page-link" href="page2.html" aria-label="Previous">
-                        <span aria-hidden="true">&laquo;</span>
-                      </a>
-                    </li>
-                    <li class="page-item " aria-current="page"><a class="page-link" href="page3.html">3</a></li>
-                    <li class="page-item active"><a class="page-link" href="page4.html">4</a></li>
-                    <li class="page-item "><a class="page-link" href="page5.html">5</a></li>
-                    <li class="page-item">
-                      <a class="page-link" href="page6.html" aria-label="Next">
-                        <span aria-hidden="true">&raquo;</span>
-                      </a>
-                    </li>
-                  </ul>
-                </nav>
-              </div>
-            </div>
-          </section>
+                
+                
+                <div class="col-md-4">
+                  <label for="validationCustom03" class="form-label">Nom de L'auteur</label>
+                  <input type="text" class="form-control" id="validationCustom03" required>
+                  <div class="invalid-feedback">
+                    Please provide a valid city.
+                  </div>
+                </div>
+               
+                <div class="col-md-3">
+                  <label for="validationCustom05" class="form-label">Date</label>
+                  <input type="text" class="form-control" id="validationCustom05" required>
+                  <div class="invalid-feedback">
+                    Please provide a valid zip.
+                  </div>
+                </div>
+                <div class="col-md-3">
+                  <label for="validationCustom03" class="form-label">Date du nderniére mise à jour</label>
+                  <input type="text" class="form-control" id="validationCustom03" required>
+                  <div class="invalid-feedback">
+                    Please provide a valid city.
+                  </div>
+                </div>
+                <div class="col-12">
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+                    <label class="form-check-label" for="invalidCheck">
+                     A tu Accepter tout les conditions 
+                    </label>
+                    <div class="invalid-feedback">
+                      Faut d'abord accepter les conditions
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12">
+                  <button class="btn btn-primary" type="submit">Soumettre le formule</button>
+                </div>
+              </form>
+              <section class="pagination">
+                <div class="row container py-3">
+                  <div class="col-auto">
+                    <nav aria-label="Page navigation example">
+                      <ul class="pagination ">
+                        <li class="page-item">
+                          <a class="page-link" href="page2.html" aria-label="Previous">
+                            <span aria-hidden="true">&laquo;</span>
+                          </a>
+                        </li>
+                        <li class="page-item " aria-current="page"><a class="page-link" href="page3.html">3</a></li>
+                        <li class="page-item active"><a class="page-link" href="page4.html">4</a></li>
+                        <li class="page-item "><a class="page-link" href="page5.html">5</a></li>
+                        <li class="page-item">
+                          <a class="page-link" href="page6.html" aria-label="Next">
+                            <span aria-hidden="true">&raquo;</span>
+                          </a>
+                        </li>
+                      </ul>
+                    </nav>
+                  </div>
+                </div>
+              </section>
+    
           
 
     <script src="Assiets/js/bootstrap.bundle.min.js" ></script>
