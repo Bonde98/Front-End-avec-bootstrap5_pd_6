@@ -4,106 +4,131 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <!--Lien Font-Awsome-->
     <script src="https://kit.fontawesome.com/22b34562ce.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="">
-    <link href="Assiets/css/bootstrap.min.css" rel="stylesheet" />
-    <link rel="stylesheet" href="Assiets/css/style1.css">
+   
     <title>Ajouter un Article Page:4</title>
 </head>
 <body>
-        <section class="home-4">
-            <nav class=" navbar navbar-expand-lg navbar-dark position-fixed w-100">
-              <div class="container-fluid">
-                <a class="navbar-brand text-uppercase mx-4 py-3 fw-bolder" href="#">Social Médias</a>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                  <ul class="navbar-nav ms-auto mb-2 mb-lg-0 ">
-                    <li class="nav-item pe-4">
-                      <a class="nav-link " aria-current="page" href="pagedaccueil.html">Accueil</a>
+        <!--section navbar de page-4-->
+      <nav class="navbar navabar-expand-sm bg-secondary navbar-dark position-fixed w-100">
+        <div class="container">
+            <a href="accueil.html" class="navbar-brand">Social Médias</a>
+            <a href="page4.html" class="nav-link text-light">Page-4</a>
+            <button class="navbar-toggler btn-warning" type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navmenu"
+            role="button">
+            <span class="navbar-toggler-icon"></span>
+            </button> 
+            <div class="collapse navbar-collapse" id="navmenu">
+                <ul class="navbar-nav  ms-auto ">
+                    <li class="nav-item">
+                        <a href="accueil.html" class="nav-link">Accueil</a>
                     </li>
-                    <li class="nav-item pe-4">
-                      <a class="nav-link" href="page6.html">Contact</a>
+                    <li class="nav-item">
+                      <a href="page6.html" class="nav-link">Contact</a>
                     </li>
-                    <li class="nav-item pe-4">
-                      <a class="nav-link" href="page7.html">A Propos</a>
+                    <li class="nav-item">
+                      <a href="page7.html" class="nav-link">Apropos</a>
                     </li>
-                    <li class="nav-item pe-4">
-                      <a class="nav-link active fw-bolder" href="page4.html">Page-4 </a>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </nav>
-          </section>        
-
-          <div class="col-md-4 py-3  container-fluid">
-            <label for="validationCustom02" class="form-label">Titre de l'article</label>
-            <input type="text" class="form-control" id="validationCustom02" required>
-            <div class="valid-feedback">
-              Looks good!
+                </ul>
             </div>
+        </div>
+       </nav>
+
+       <!--section de la page-->
+       <section class="container-fluid py-5 bg-dark text-warning">
+        <div class="row">
+          <div class="col-md-3"></div>
+          <div class="col-md-6 py-5 text-center ">
+            <h1>Bienvenue dans la Page de la création d'article, ou tu peux créer ton propre article gratuitement</h1>
           </div>
-          <div class="col-md-8 mb-3 container-fluid">
-            <label for="exampleFormControlTextarea1" class="form-label">Description de l'article</label>
-            <textarea class="form-control" id="exampleFormControlTextarea1" rows="12"></textarea>
+          <div class="col-md-3"></div>     
+        </div>   
+        <div class="col-md-4 py-3 container-fluid ">
+          <label for="validationCustom02" class="form-label ">Titre de l'article</label>
+          <input type="text" class="form-control" id="validationCustom02" required>
+          <div class="valid-feedback">
+            Looks good!
           </div>
-        
-            <form class="row g-3 needs-validation container-fluid" novalidate>
-                <div class="mb-3">
-                    <label for="exampleFormControlTextarea1" class="form-label">Les Détails de l'article</label>
-                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="25"></textarea>
-                  
-                    <figure class="figure py-3">
-                      <img src="assiets/images/businessman.jpg" class="figure-img img-fluid rounded" alt="..." >
-                       
-                      <figcaption class="figure-caption text-light text-end">l'image de l'auteur.</figcaption>
-                    </figure>
-                  
-                  </div>
+        </div>
+        <div class="col-md-8 mb-3 container-fluid ">
+          <label for="exampleFormControlTextarea1" class="form-label">Description de l'article</label>
+          <textarea class="form-control" id="exampleFormControlTextarea1" rows="12"></textarea>
+        </div>
+      
+          <form class="row g-5 needs-validation container-fluid" novalidate>
+              <div class="mb-3">
+                 <label for="exampleFormControlTextarea1" class="form-label">Les Détails de l'article</label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="20"></textarea>
+              </div>
+                <div class="col-md-6">
+                  <label for="formFile" class="form-label">L'image de L'auteur</label>
+                  <input class="form-control" type="file" id="formFile" >
+                  </div>  
                 
               
-                
-                
-                <div class="col-md-4">
-                  <label for="validationCustom03" class="form-label">Nom de L'auteur</label>
-                  <input type="text" class="form-control" id="validationCustom03" required>
+              <div class="col-md-6">
+                <label for="validationCustom03" class="form-label">Nom de L'auteur</label>
+                <input type="text" class="form-control" id="validationCustom03" required>
+                <div class="invalid-feedback">
+                  Please provide a valid city.
+                </div>
+              </div>
+             
+              <div class="col-md-4">
+                <label for="validationCustom05" class="form-label">Date</label>
+                <input type="text" class="form-control" id="validationCustom05" required>
+                <div class="invalid-feedback">
+                  Please provide a valid zip.
+                </div>
+              </div>
+              <div class="col-md-5 ">
+                <label for="validationCustom03" class="form-label">Date du nderniére mise à jour</label>
+                <input type="text" class="form-control" id="validationCustom03" required>
+                <div class="invalid-feedback">
+                  Please provide a valid city.
+                </div>
+              </div>
+              <div class="col-12">
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+                  <label class="form-check-label" for="invalidCheck">
+                   A tu Accepter tout les conditions 
+                  </label>
                   <div class="invalid-feedback">
-                    Please provide a valid city.
+                    Faut d'abord accepter les conditions
                   </div>
                 </div>
-               
-                <div class="col-md-3">
-                  <label for="validationCustom05" class="form-label">Date</label>
-                  <input type="text" class="form-control" id="validationCustom05" required>
-                  <div class="invalid-feedback">
-                    Please provide a valid zip.
-                  </div>
-                </div>
-                <div class="col-md-3">
-                  <label for="validationCustom03" class="form-label">Date du nderniére mise à jour</label>
-                  <input type="text" class="form-control" id="validationCustom03" required>
-                  <div class="invalid-feedback">
-                    Please provide a valid city.
-                  </div>
-                </div>
-                <div class="col-12">
-                  <div class="form-check">
-                    <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
-                    <label class="form-check-label" for="invalidCheck">
-                     A tu Accepter tout les conditions 
-                    </label>
-                    <div class="invalid-feedback">
-                      Faut d'abord accepter les conditions
-                    </div>
-                  </div>
-                </div>
-                <div class="col-12">
-                  <button class="btn btn-primary" type="submit">Soumettre le formule</button>
-                </div>
-              </form>
-              <section class="pagination">
+              </div>
+        <!-- Modal -->     
+        <section class="btn">
+            <button type="button" class="btn btn-primary position-relative" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    <p>soumettre</p>
+            </button>
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <p class="text-dark" id="exampleModalLabel">A tu Accepter tout les conditions </p>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Non,fermer</button>
+                <button type="submit" class="btn btn-primary">Sauvegarde</button>
+              </div>
+            </div>
+          </div>
+        </div>
+    
+        </section> 
+      
+      </section>
+    
+              <section class="pagination bg-success">
                 <div class="row container py-3">
-                  <div class="col-auto">
+                  <div class="col-md-12">
                     <nav aria-label="Page navigation example">
                       <ul class="pagination ">
                         <li class="page-item">
@@ -111,9 +136,9 @@
                             <span aria-hidden="true">&laquo;</span>
                           </a>
                         </li>
-                        <li class="page-item " aria-current="page"><a class="page-link" href="page3.html">3</a></li>
-                        <li class="page-item active"><a class="page-link" href="page4.html">4</a></li>
-                        <li class="page-item "><a class="page-link" href="page5.html">5</a></li>
+                        <li class="page-item "><a class="page-link" href="page3.html">3</a></li>
+                        <li class="page-item active" aria-current="page"><a class="page-link" href="page4.html">4</a></li>
+                        <li class="page-item "><a class="page-link" href="page5.html">5</a> </li>
                         <li class="page-item">
                           <a class="page-link" href="page6.html" aria-label="Next">
                             <span aria-hidden="true">&raquo;</span>
@@ -123,10 +148,11 @@
                     </nav>
                   </div>
                 </div>
-              </section>
+                </section>
+              <div class="copy bg-success text-center fw-bold">
+                <p>&COPY;COPYRIGHT ASSE-BADIANE 2022</p>
+               </div>
     
-          
-
-    <script src="Assiets/js/bootstrap.bundle.min.js" ></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>
 </html>
